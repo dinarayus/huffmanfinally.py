@@ -36,7 +36,7 @@ def  huffman_encode(s):
 def main():
     s = input()
     code = huffman_encode(s)
-    encoded = "".join(code[symbol] for symbol in s)
+    encoded = "".join(code[symbol] for symbol in s)  # закодированная строка
     print(len(code), len(encoded))
     for symbol in sorted(code):
         print("{}: {}".format(symbol, code[symbol]))
